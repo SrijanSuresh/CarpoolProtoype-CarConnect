@@ -22,7 +22,6 @@ app.get("/connect", (req,res) =>{
     res.render('map')
 });
 
-
 app.post("/login", (req, res) => {
     const username = req.body.username;
     const password = req.body.password; // assuming you have a password field
@@ -34,7 +33,20 @@ app.post("/login", (req, res) => {
     });
 });
 
+// Below is the code to store data for database
+app.get("/destination", (req,res) =>{
+    res.render('userInfo')
+});
+app.post("/destination", (req, res) => {
+    const addressFrom = req.body.addressFrom;
+    const addressTo = req.body.addressTo; // assuming you have a password field
 
+    // You can use the username and password variables here as needed
+    res.render('userInfo', {
+        addressFrom: addressFrom,
+        addressTo: addressTo // pass the password to the template if needed
+    });
+});
 
 const userRouter = require('./routes/users')
 
