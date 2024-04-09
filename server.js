@@ -18,6 +18,11 @@ app.get("/login", (req,res) =>{
     res.render('login')
 });
 
+app.get("/connect", (req,res) =>{
+    res.render('map')
+});
+
+
 app.post("/login", (req, res) => {
     const username = req.body.username;
     const password = req.body.password; // assuming you have a password field
