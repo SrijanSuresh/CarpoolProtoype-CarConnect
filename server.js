@@ -1,5 +1,6 @@
 const express = require("express")
 const bodyParser = require('body-parser');
+const pool = require('./db')
 
 const app = express()
 
@@ -52,4 +53,4 @@ const userRouter = require('./routes/users')
 
 app.use('/users', userRouter)
 
-app.listen(3000)
+app.listen(3000, () => console.log('Server has started on port: 3000'))
