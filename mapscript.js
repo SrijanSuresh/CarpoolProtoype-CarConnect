@@ -1,7 +1,6 @@
-function initMap(){
-    map = new google.maps.Map(document.getElementById('map'),{
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8,
-        mapId: 'e31cee457f27fcf7'
-    })
-}
+var map = L.map('map').setView([51.505, -0.09], 13);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
