@@ -5,9 +5,9 @@ import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
   return (
-    <div className="App h-screen flex items-center justify-center bg-blue-100">
+    <div className="App h-screen flex items-center justify-center bg-green-black">
       <div className="max-w-md w-full bg-white p-10 pt-28 pb-20 rounded-lg shadow-md">
-        <h1 className="text-3xl font-bold text-center mb-6">Welcome! Please sign in to continue.</h1>
+        <h1 className="text-3xl font-bold text-center mb-6">Create your account.</h1>
         
         <form action="/login" method="POST" className="space-y-4">
           <div>
