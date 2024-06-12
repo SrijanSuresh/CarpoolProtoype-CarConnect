@@ -9,7 +9,7 @@ function App() {
       <div className="max-w-md w-full bg-white p-10 pt-28 pb-20 rounded-lg shadow-md">
         <h1 className="text-3xl font-bold text-center mb-6">Welcome! Please sign in to continue.</h1>
         
-        <form action="/login" method="POST" className="space-y-4">
+        <form action="/signup" method="POST" className="space-y-4">
           <div>
             <input
               type="text"
