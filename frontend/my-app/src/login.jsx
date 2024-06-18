@@ -37,7 +37,7 @@ function Login() {
               <FontAwesomeIcon icon={faGoogle} className="text-black-600 mr-2 cursor-pointer" onClick={handleGoogleSignUp} />
               <button type="button" onClick={handleGoogleSignUp} className="text-black-600 focus:outline-none">Continue with Google</button>
             </div>
-            <div className="mt-8 bg-white hover:bg-indigo-700 text-black font-semibold py-3 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 w-half ">
+            <div className="mt-8 bg-white hover:bg-indigo-700 text-black font-semibold py-3 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 w-2/5 ">
               <button type="button" className="text-black-500 focus:outline-none">Forgot Password?</button>
             </div>
           </div>
