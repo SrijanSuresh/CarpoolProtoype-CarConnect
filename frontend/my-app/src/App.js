@@ -36,17 +36,17 @@ function App() {
               className="mt-4 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-3"
             />
           </div>
-          <div className="flex justify-between items-center mt-6">
-            <div className="flex items-center">
+          <div className="flex justify-between items-center mt-6 rounded-md">
+            <div className="mt-8 bg-white hover:bg-indigo-700 text-black font-semibold py-3 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 w-half ">
               {/* Google logo */}
-              <FontAwesomeIcon icon={faGoogle} className="text-indigo-600 mr-2 cursor-pointer" onClick={handleGoogleSignUp} />
+              <FontAwesomeIcon icon={faGoogle} className="text-black-600 mr-2 cursor-pointer" onClick={handleGoogleSignUp} />
               {/* Google Sign-in option */}
-              <button type="button" onClick={handleGoogleSignUp} className="text-indigo-600 hover:underline focus:outline-none">Sign up with Google</button>
+              <button type="button" onClick={handleGoogleSignUp} className="text-black-600 focus:outline-none">Sign up with Google</button>
             </div>
 
-            <div>
+            <div className="mt-8 bg-white hover:bg-indigo-700 text-black font-semibold py-3 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 w-half ">
               {/* Forgot Password option */}
-              <button type="button" className="text-blue-500 hover:underline focus:outline-none">Forgot Password?</button>
+              <button type="button" className="text-black-500 focus:outline-none">Forgot Password?</button>
             </div>
           </div>
 
