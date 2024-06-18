@@ -4,6 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
+  // Handle Google sign-up click event
+  const handleGoogleSignUp = () => {
+    // Implement Google sign-up logic here
+    alert('Implement Google sign-up functionality');
+  };
+
   return (
     <div className="App h-screen flex items-center justify-center bg-gradient-to-br from-blue-400 to-black">
       <div className="max-w-md w-full bg-black p-10 pt-30 pb-20 rounded-lg shadow-md">
@@ -33,9 +39,9 @@ function App() {
           <div className="flex justify-between items-center mt-6">
             <div className="flex items-center">
               {/* Google logo */}
-              <FontAwesomeIcon icon={faGoogle} className="text-indigo-600 mr-2" />
+              <FontAwesomeIcon icon={faGoogle} className="text-indigo-600 mr-2 cursor-pointer" onClick={handleGoogleSignUp} />
               {/* Google Sign-in option */}
-              <button type="button" className="text-indigo-600 hover:underline focus:outline-none">Sign up with Google</button>
+              <button type="button" onClick={handleGoogleSignUp} className="text-indigo-600 hover:underline focus:outline-none">Sign up with Google</button>
             </div>
 
             <div>
