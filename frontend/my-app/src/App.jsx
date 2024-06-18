@@ -8,7 +8,7 @@ import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { AuthProvider, useAuth } from './context/AuthContexts';
 
 function App() {  
-  const { signup } = useAuth();
+  // const { signup } = useAuth();
   // const [setError] = useState('');
   // const [setLoading] = useState(false);
   // // Handle Google sign-up click event
@@ -26,7 +26,7 @@ function App() {
     // try {
     //   setError('');
     //   setLoading(true);
-    signup(emailRef.current.value, passRef.current.value);
+    // signup(emailRef.current.value, passRef.current.value);
     // } catch {
     //   setError('Failed to create an account');
     // }
