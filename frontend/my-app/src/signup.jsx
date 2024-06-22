@@ -15,6 +15,7 @@ function Signup() {
   const [loading, setLoading] = useState(false);
 
   const handleGoogleSignUp = async () => {
+    await doSignInWithGoogle();
     setLoading(true);
     try {
       await doSignInWithGoogle();

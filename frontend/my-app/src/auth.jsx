@@ -1,6 +1,5 @@
-import {auth} from "./firebase"
-
-import { GoogleAuthProvider, createUserWithEmailAndPassword,  sendEmailVerification, sendPasswordResetEmail, signInWithPopup, updatePassword, signInWithEmailAndPassword} from "firebase/auth"
+import {auth, provider} from "./firebase"
+import { createUserWithEmailAndPassword,  /*sendEmailVerification, sendPasswordResetEmail,*/ signInWithPopup, /*updatePassword,*/ signInWithEmailAndPassword} from "firebase/auth"
 
 export const doCreateUserWithEmailAndPassword = async (email,password) =>{
     return createUserWithEmailAndPassword(auth, email, password)
@@ -11,11 +10,20 @@ export const doSigninWithEmailAndPassWord = (email,password) =>{
 }
 
 export const doSignInWithGoogle = async () => {
-    const provider = new GoogleAuthProvider();
-    const result =  await signInWithPopup(auth,provider)
-    //result.user
-    return result
-}
+    try {
+        const result = await signInWithPopup(auth, provider);
+        const userEmail = result.user.email;
+        
+        // Store email in localStorage
+        localStorage.setItem("email", userEmail);
+
+        return result;
+    } catch (error) {
+        console.error("Google Sign-in Error:", error.message);
+        throw error; // Rethrow the error to handle it where this function is called
+    }
+};
+
 
 export const doSignOut = () => {
     return auth.signOut();
