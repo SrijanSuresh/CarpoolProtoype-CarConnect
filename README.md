@@ -1,4 +1,4 @@
-# Car Ride Connection App
+# Car Ride Connection/ CarConnect App
 
 ## Overview
 
