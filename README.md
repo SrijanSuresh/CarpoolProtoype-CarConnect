@@ -16,6 +16,7 @@ This project is a frontend application that allows users to sign up, log in, and
 - **Tailwind CSS**
 - **EJS**
 - **Google Firebase**
+- **PostgreSQL**
 
 ## Getting Started
 
