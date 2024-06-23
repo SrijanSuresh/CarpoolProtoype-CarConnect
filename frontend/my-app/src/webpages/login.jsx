@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
-import { doSigninWithEmailAndPassWord, doSignInWithGoogle } from './auth';
-import { useAuth } from './context/AuthContexts';
+import { doSigninWithEmailAndPassWord, doSignInWithGoogle } from '../auth';
+import { useAuth } from '../context/AuthContexts';
 
 function Login() {  
   const { userLoggedIn } = useAuth();

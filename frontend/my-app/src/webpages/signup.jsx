@@ -2,8 +2,8 @@ import React, { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
-import { useAuth } from './context/AuthContexts';
-import { doCreateUserWithEmailAndPassword, doSignInWithGoogle } from './auth';
+import { useAuth } from '../context/AuthContexts';
+import { doCreateUserWithEmailAndPassword, doSignInWithGoogle } from '../auth';
 
 function Signup() {
   const emailRef = useRef();

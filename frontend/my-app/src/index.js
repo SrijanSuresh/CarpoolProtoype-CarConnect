@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import Login from './login';
+import Login from './webpages/login';
 import { AuthProvider } from './context/AuthContexts';
 import reportWebVitals from './reportWebVitals';
-import Signup from './signup';
+import Signup from './webpages/signup';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
