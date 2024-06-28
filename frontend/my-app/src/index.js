@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
+import MapScreen from './webpages/mapscreen';
 import Home from './webpages/home';
 import App from './App';
 import Login from './webpages/login';
@@ -19,6 +20,7 @@ root.render(
           <Route path="/signup" element={<Signup />} />
           <Route path="/" element={<App />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/map" element={<MapScreen/>}/>
         </Routes>
       </Router>
     </AuthProvider>
